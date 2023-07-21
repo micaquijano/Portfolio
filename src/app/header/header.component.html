@@ -2,7 +2,8 @@
   <button mat-icon-button (click)="toggleMenu()" class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
-  <span>Micaela Quijano</span>
+  <button mat-button *ngIf="isMenuOpen">Home</button> <!-- *ngIf mostrar elemento - booleano  -->
+  <button mat-button *ngIf="isMenuOpen">Sobre Mi</button>
   <span class="example-spacer"></span>
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>favorite</mat-icon>
@@ -10,7 +11,7 @@
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
     <mat-icon>share</mat-icon>
   </button>
-  <button mat-button *ngIf="isMenuOpen">Home</button> <!-- *ngIf mostrar elemento - booleano  -->
-  <button mat-button *ngIf="isMenuOpen">Sobre Mi</button>
+  
 </mat-toolbar>
+
 
