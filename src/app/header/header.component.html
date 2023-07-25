@@ -1,17 +1,10 @@
-<mat-toolbar>
+<mat-toolbar class="color-toolbar">
   <button mat-icon-button (click)="toggleMenu()" class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
-  <button mat-button *ngIf="isMenuOpen">Home</button> <!-- *ngIf mostrar elemento - booleano  -->
-  <button mat-button *ngIf="isMenuOpen">Sobre Mi</button>
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
-  
+  <a routerLink="/home" mat-button *ngIf="isMenuOpen">Home</a> <!-- *ngIf mostrar elemento - booleano  -->
+  <a routerLink="/sobreMi" mat-button *ngIf="isMenuOpen">Sobre Mi</a>
+  <a routerLink="/contactos" mat-button *ngIf="isMenuOpen">Contactos</a>
 </mat-toolbar>
 
 
