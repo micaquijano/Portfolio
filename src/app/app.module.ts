@@ -9,6 +9,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {NgIf} from '@angular/common';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatCardModule} from '@angular/material/card';
 
 //Component 
 import { AppComponent } from './app.component';
@@ -43,6 +46,9 @@ const routes: Routes = [
     MatToolbarModule,
     MatSidenavModule,
     NgIf,
+    MatCardModule,
+    MatDividerModule,
+    MatProgressBarModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
