@@ -13,8 +13,3 @@ export class SobreMiComponent {
   Estoy emocionada por seguir aplicando mis habilidades en futuros proyectos y continuar creciendo en este apasionante campo.`;
 }
 
-/* constructor(private router: Router  ) {}
-
-goContacts() {
-  this.router.navigate(['/contactos']);
-} */
