@@ -1,3 +1,13 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>  
+<mat-drawer-container hasBackdrop="true" class="example-container" autosize>
+  <app-header
+    (onChangeMenu)="drawer.toggle(); isMenuOpen = $event"
+  ></app-header>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+
+  <mat-drawer #drawer  class="example-sidenav primaryStyle" mode="over">
+    <p>{{ 1 | percent}}</p>
+    <p>Lorem, ipsum dolor sit amet consectetur.</p>
+    {{ objeto | json }}
+  </mat-drawer>
+</mat-drawer-container>

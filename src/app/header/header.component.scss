@@ -5,3 +5,13 @@
 .menu{
     color: #fff;
 }
+
+.spacer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: auto;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+  }
