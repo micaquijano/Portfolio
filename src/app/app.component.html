@@ -6,8 +6,12 @@
   <app-footer></app-footer>
 
   <mat-drawer #drawer  class="example-sidenav primaryStyle" mode="over">
-    <p>{{ 1 | percent}}</p>
-    <p>Lorem, ipsum dolor sit amet consectetur.</p>
-    {{ objeto | json }}
+    <!-- <p>{{ 1 | percent}}</p> -->
+    <!-- {{ objeto | json }} -->
+    <div class="button-container">
+    <a routerLink="/home" mat-button *ngIf="isMenuOpen">Home</a> <!-- *ngIf mostrar elemento - booleano  -->
+    <a routerLink="/sobreMi" mat-button *ngIf="isMenuOpen">Sobre Mi</a>
+    <a routerLink="/contactos" mat-button *ngIf="isMenuOpen">Contactos</a>
+  </div>
   </mat-drawer>
 </mat-drawer-container>

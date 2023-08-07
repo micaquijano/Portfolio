@@ -24,7 +24,7 @@ $my-theme: mat.define-light-theme((
 
 body{
   display: block;
-    margin: 0px;
+  margin: 0px;
 }
 .mat-drawer-content{
   position: relative;
@@ -32,5 +32,19 @@ body{
   display: block;
   height: 100%;
   overflow: unset !important;
+  background-color: #412583;
+}
 
+.button-container {
+  display: flex;
+  flex-flow: column;
+  width: 14rem;
+  padding: 1rem; 
+  align-items: baseline;
+  padding: 1rem;
+  /* color: white !important; */
+}
+
+.mat-mdc-button {
+  color: white !important;
 }
